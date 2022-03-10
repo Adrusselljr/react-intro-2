@@ -22,7 +22,6 @@ export class App extends Component {
     }
 
     changeHandler = e => {
-        console.log(this.state.newTodo)
         this.setState({
             newTodo: e.target.value
         })
@@ -38,8 +37,15 @@ export class App extends Component {
         )
     }
 
-    onSubmit = e => {
+    submitHandler = e => {
         e.preventDefault()
+        let newArray = [
+            ...this.state.todoArray,
+            { id: this.state.todoArray.length + 1, todo: this.state.newTodo }
+        ]
+        this.setState({
+            todoArray: newArray
+        })
     }
 
     render() {
@@ -47,7 +53,7 @@ export class App extends Component {
         const { newTodo } = this.state
 
         return (
-            <div>
+            <div className='App'>
 
                 <form onSubmit={ this.submitHandler }>
 

@@ -49,7 +49,7 @@ export class AppInput extends Component {
 
   render() {
     return (
-      <div>
+      <div className='App'>
 
         <label>Email: </label>
         <input onChange={ this.changeHandlerEmail } name="email" value={ this.state.email } />

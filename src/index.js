@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 // import AppMap from './AppMap';
-// import AppInput from './AppInput.jsx'
-import App from './App.jsx'
+// import AppInput from './AppInput'
+import App from './App'
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <AppInput />
-    <AppMap /> */}
+    {/* <AppInput /> */}
+    {/* <AppMap /> */}
     <App />
   </React.StrictMode>,
   document.getElementById('root')

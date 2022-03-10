@@ -66,6 +66,8 @@ export class AppMap extends Component {
                 {/* Using function */}
                 { this.showItemList() }
 
+                <br/><br/><p>-----------------------------------------------</p><br/><br/>
+
         </div>
 
         )
